@@ -16,4 +16,3 @@ jobs:
       alphas: '["QWERTY"]'
       nav: '["vi"]'
       kconfig: '["CONFIG_ZMK_MOUSE=y"]'
-      branches: '["evgnskv/miryoku_zmk/hwchoc-custom-layers"]'
