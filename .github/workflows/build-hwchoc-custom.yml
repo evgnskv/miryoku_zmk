@@ -11,4 +11,4 @@ jobs:
       board: '["nice_nano_v2"]'
       shield: '["hwchoc_left","hwchoc_right"]'
       kconfig: '["CONFIG_ZMK_MOUSE=y"]'
-      custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
+      branches: '["evgnskv/miryoku_zmk/hwchoc-custom-layers","zmkfirmware/zmk/main evgnskv/miryoku_zmk/hwchoc-custom-layers"]'
