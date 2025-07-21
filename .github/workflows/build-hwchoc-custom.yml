@@ -2,10 +2,7 @@
 # https://github.com/manna-harbour/miryoku
 
 name: 'Build hwchoc nice_nano_v2'
-on:
-  push:
-    branches:
-      - '**'
+on: workflow_dispatch
 jobs:
   build:
     uses: ./.github/workflows/main.yml
@@ -13,5 +10,7 @@ jobs:
     with:
       board: '["nice_nano_v2"]'
       shield: '["hwchoc_left","hwchoc_right"]'
+      alphas: '["QWERTY"]'
+      nav: '["vi"]'
       kconfig: '["CONFIG_ZMK_MOUSE=y"]'
       branches: '["evgnskv/miryoku_zmk/hwchoc-custom-layers","zmkfirmware/zmk/main evgnskv/miryoku_zmk/hwchoc-custom-layers"]'
