@@ -2,7 +2,10 @@
 # https://github.com/manna-harbour/miryoku
 
 name: 'Build hwchoc nice_nano_v2'
-on: workflow_dispatch
+on:
+  push:
+    branches:
+      - '**'
 jobs:
   build:
     uses: ./.github/workflows/main.yml
