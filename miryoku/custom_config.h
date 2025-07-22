@@ -2,6 +2,7 @@
 // https://github.com/manna-harbour/miryoku
 
 #define MIRYOKU_KLUDGE_MOUSEKEYSPR
+#define MIRYOKU_CLIPBOARD_FUN
 
 #define MIRYOKU_LAYER_NAV \
 U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_CPY,             U_UND,             U_RDO,             U_CUT,             U_PST,             \

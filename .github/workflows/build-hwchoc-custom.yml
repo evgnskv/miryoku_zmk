@@ -15,4 +15,3 @@ jobs:
       shield: '["hwchoc_left","hwchoc_right"]'
       alphas: '["QWERTY"]'
       nav: '["vi"]'
-      kconfig: '["CONFIG_ZMK_MOUSE=y"]'
