@@ -30,7 +30,7 @@ U_NP,              U_NP,              U_BTN3,            U_BTN1,            U_BT
 
 #define MIRYOKU_LAYER_DA \
 &kp TAB,           &kp N1,            &kp N2,            &kp N3,            &kp R,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
-&kp LSHFT,         &kp Q,             &kp W,             &kp E,             &kp F,             &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,           \
+&kp LSHFT,         &kp Q,             &kp W,             &kp E,             &kp G,             &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,           \
 &kp LCTRL,         &kp A,             &kp S,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
 U_NP,              U_NP,              &kp LALT,          &mo U_DB,          &kp SPACE,         &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
 
