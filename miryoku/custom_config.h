@@ -2,7 +2,7 @@
 // https://github.com/manna-harbour/miryoku
 
 #define MIRYOKU_KLUDGE_MOUSEKEYSPR
-#define MIRYOKU_CLIPBOARD_FUN
+#define MIRYOKU_CLIPBOARD_MAC
 
 #define MIRYOKU_LAYER_NAV \
 U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_CPY,             U_UND,             U_RDO,             U_CUT,             U_PST,             \
@@ -38,7 +38,7 @@ U_NP,              U_NP,              &kp LALT,          &mo U_DB,          &kp 
 &kp ESC,           &kp N4,            &kp N5,            &kp N6,            &kp T,             &kp F15,           &kp F7,            &kp F8,            &kp F9,            &kp F12,           \
 &kp LSHFT,         &kp Q,             &kp D,             &kp F,             &kp G,             &kp F14,           &kp F4,            &kp F5,            &kp F6,            &kp F11,           \
 &kp LALT,          &kp Z,             &kp X,             &kp C,             &kp B,             &kp F13,           &kp F1,            &kp F2,            &kp F3,            &kp F10,           \
-U_NP,              U_NP,              &kp LALT,          U_NA,              &kp SPACE,         &kp RET,           &u_to_U_BASE,      &kp DEL,           U_NP,              U_NP
+U_NP,              U_NP,              &kp LALT,          U_NA,              &kp SPACE,         &kp RET,           &to U_BASE,        &kp DEL,           U_NP,              U_NP
 
 #define MIRYOKU_LAYER_CA \
 &kp TAB,           &kp N1,            &kp N2,            &kp N3,            &kp R,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
@@ -50,7 +50,7 @@ U_NP,              U_NP,              &kp LALT,          &mo U_CB,          &kp 
 &kp ESC,           &kp N4,            &kp N5,            &kp E,             &kp B,             &kp F15,           &kp F7,            &kp F8,            &kp F9,            &kp F12,           \
 &kp LSHFT,         &kp A,             &kp W,             &kp D,             &kp T,             &kp F14,           &kp F4,            &kp F5,            &kp F6,            &kp F11,           \
 &kp LCTRL,         &kp Z,             &kp S,             &kp X,             &kp Y,             &kp F13,           &kp F1,            &kp F2,            &kp F3,            &kp F10,           \
-U_NP,              U_NP,              &kp LALT,          U_NA,              &kp SPACE,         &kp RET,           &u_to_U_BASE,      &kp DEL,           U_NP,              U_NP
+U_NP,              U_NP,              &kp LALT,          U_NA,              &kp SPACE,         &kp RET,           &to U_BASE,        &kp DEL,           U_NP,              U_NP
 
 #define MIRYOKU_LAYER_LIST \
 MIRYOKU_X(BASE,   "Base") \
