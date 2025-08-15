@@ -3,6 +3,7 @@
 
 #define MIRYOKU_KLUDGE_MOUSEKEYSPR
 #define MIRYOKU_CLIPBOARD_MAC
+#define U_TAPPING_TERM 100
 
 #define MIRYOKU_LAYER_QWERTY \
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
