@@ -3,7 +3,6 @@
 
 #define MIRYOKU_KLUDGE_MOUSEKEYSPR
 #define MIRYOKU_CLIPBOARD_MAC
-#define U_TAPPING_TERM 150
 
 #define MIRYOKU_LAYER_BASE \
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
@@ -24,10 +23,22 @@ U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              U_BTN1,            U_BTN2,            U_BTN3,            U_NP,              U_NP
 
 #define MIRYOKU_LAYER_MEDIA \
-U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      &to U_CA,          &kp F18,           &kp F19,           &kp F20,           &kp F21,           &kp F22,           \
-&kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         &to U_DA,          &kp C_PREV,        &kp C_VOL_DN,      &kp C_VOL_UP,      &kp C_NEXT,        U_EP_TOG,          \
-&kp RGUI,          &kp RALT,          &u_to_U_FUN,       &u_to_U_MEDIA,     U_NA,              &u_bt_sel_0,       &u_bt_sel_1,       &u_bt_sel_2,       &u_bt_sel_3,       &u_out_tog,        \
+U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      &to U_AA,          &kp F18,           &kp F19,           &kp F20,           &kp F21,           &kp F22,           \
+&kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         &to U_CA,          &kp C_PREV,        &kp C_VOL_DN,      &kp C_VOL_UP,      &kp C_NEXT,        U_EP_TOG,          \
+&kp RGUI,          &kp RALT,          &u_to_U_FUN,       &u_to_U_MEDIA,     &to U_DA,          &u_bt_sel_0,       &u_bt_sel_1,       &u_bt_sel_2,       &u_bt_sel_3,       &u_out_tog,        \
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp C_STOP,        &kp C_PP,          &kp C_MUTE,        U_NP,              U_NP
+
+#define MIRYOKU_LAYER_AA \
+&kp TAB,           &kp N1,            &kp N2,            &kp N3,            &kp R,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
+&kp LSHFT,         &kp Q,             &kp W,             &kp E,             &kp F,             &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,           \
+&kp LCTRL,         &kp A,             &kp S,             &kp D,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
+U_NP,              U_NP,              &kp LALT,          &kp SPACE,         &mo U_AB,          &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
+
+#define MIRYOKU_LAYER_AB \
+&kp ESC,           &kp N4,            &kp N5,            &kp N6,            &kp T,             &kp F15,           &kp F7,            &kp F8,            &kp F9,            &kp F12,           \
+&kp V,             &kp Z,             &kp W,             &kp X,             &kp G,             &kp F14,           &kp F4,            &kp F5,            &kp F6,            &kp F11,           \
+&kp C,             &kp A,             &kp S,             &kp D,             &kp H,             &kp F13,           &kp F1,            &kp F2,            &kp F3,            &kp F10,           \
+U_NP,              U_NP,              &kp N,             &kp M,             U_NA,              &to U_BASE,        &kp BSPC,          &kp DEL,           U_NP,              U_NP
 
 #define MIRYOKU_LAYER_CA \
 &kp TAB,           &kp N1,            &kp N2,            &kp N3,            &kp R,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
@@ -64,11 +75,15 @@ MIRYOKU_X(MEDIA,  "Media")   \
 MIRYOKU_X(NUM,    "Num")     \
 MIRYOKU_X(SYM,    "Sym")     \
 MIRYOKU_X(FUN,    "Fun")     \
+MIRYOKU_X(AA,     "A Base")  \
+MIRYOKU_X(AB,     "A Extra") \
 MIRYOKU_X(CA,     "C Base")  \
 MIRYOKU_X(CB,     "C Extra") \
 MIRYOKU_X(DA,     "D Base")  \
 MIRYOKU_X(DB,     "D Extra") 
 
+#define MIRYOKU_LAYERMAPPING_AA MIRYOKU_MAPPING
+#define MIRYOKU_LAYERMAPPING_AB MIRYOKU_MAPPING
 #define MIRYOKU_LAYERMAPPING_CA MIRYOKU_MAPPING
 #define MIRYOKU_LAYERMAPPING_CB MIRYOKU_MAPPING
 #define MIRYOKU_LAYERMAPPING_DA MIRYOKU_MAPPING
@@ -84,7 +99,9 @@ MIRYOKU_X(DB,     "D Extra")
 #define U_NUM    7
 #define U_SYM    8
 #define U_FUN    9
-#define U_CA    10
-#define U_CB    11
-#define U_DA    12
-#define U_DB    13
+#define U_AA    10
+#define U_AB    11
+#define U_CA    12
+#define U_CB    13
+#define U_DA    14
+#define U_DB    15
